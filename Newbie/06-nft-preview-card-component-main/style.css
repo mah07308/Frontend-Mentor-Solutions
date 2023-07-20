@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: hsl(217, 54%, 11%);
+}
+
+p {
+  color: hsl(215, 51%, 70%);
+}
+
+.card {
+  max-width: 23.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  padding: 1.5rem;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 1rem;
+}
+
+.image {
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.image img {
+  display: block;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: hsla(178, 100%, 50%, 0.5);
+  background-image: url('./images/icon-view.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 0.5rem;
+}
+
+.overlay:hover,
+.overlay:active {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.text-content h1 {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.text-content h1:hover,
+.text-content h1:active {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.text-content > p {
+  margin: 0.8rem 0;
+}
+
+.eth-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.eth-amount {
+  display: flex;
+  align-items: center;
+}
+
+.time-left {
+  display: flex;
+  align-items: center;
+}
+
+.eth-amount > p,
+.time-left > p {
+  padding-left: 0.5rem;
+}
+
+.eth-amount > p {
+  color: hsl(178, 100%, 50%);
+}
+
+hr {
+  background-color: hsl(215, 32%, 27%);
+  height: 0.1rem;
+  border: none;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.author img {
+  display: inline-block;
+  border: 0.1rem white solid;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.author p {
+  padding-left: 1rem;
+}
+
+.author-name {
+  color: white;
+  text-decoration: none;
+}
+
+.author-name:hover,
+.author-name:active {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+footer {
+  padding: 1rem;
+  color: hsl(215, 51%, 70%);
+}
+
+footer a {
+  color: hsl(215, 51%, 70%);
+}
+
+.attribution {
+  font-size: 0.8rem;
+  text-align: center;
+}
+.attribution a {
+  /* color: hsl(228, 45%, 44%); */
+}

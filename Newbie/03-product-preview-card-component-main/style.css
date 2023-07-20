@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+body {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 87.5%;
+  background: var(--cream);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 1.5rem;
+  max-width: 27rem;
+  border-radius: 0.5rem;
+  background: var(--white);
+}
+
+.image-half {
+}
+
+.product-image {
+  max-width: 100%;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.text-half {
+  margin: 1.5rem;
+}
+
+.product-category {
+  text-transform: uppercase;
+  color: var(--dark-grayish-blue);
+  letter-spacing: 0.3rem;
+  font-size: 0.8rem;
+}
+
+.product-title {
+  font-family: Fraunces;
+  font-size: 1.8rem;
+  color: var(--very-dark-blue);
+  line-height: 1.2;
+  margin: 1rem 0;
+}
+
+.product-description {
+  margin: 1rem 0;
+  color: var(--dark-grayish-blue);
+}
+
+.product-price {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.product-price-new {
+  font-family: Fraunces;
+  color: var(--dark-cyan);
+  font-size: 2rem;
+  padding-right: 1.5rem;
+}
+
+.product-price-old {
+  color: var(--dark-grayish-blue);
+}
+
+.btn-add-to-cart {
+  background-color: var(--dark-cyan);
+  color: var(--white);
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-cart-icon {
+  padding-right: 1rem;
+}
+
+.btn-add-to-cart:hover,
+.btn-add-to-cart:active {
+  background-color: hsl(158, 80%, 15%);
+}
+
+footer {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 48rem) {
+  .product-card {
+    flex-direction: row;
+    margin: 1rem 0;
+    min-width: 40rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+  }
+
+  .image-half {
+    min-height: 100%;
+  }
+
+  .product-image {
+    display: block;
+    min-height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+
+  .text-half {
+    max-width: 50%;
+    margin: 0;
+    padding: 2rem;
+    min-height: 100%;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
